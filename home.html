@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+
+    <!-- TailwindCSS
+    <link href="/dist/output.css" rel="stylesheet"> -->
+
+    <link rel="stylesheet" href="src/input.css">
+    <script src="src/script.js"></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+
+    <!--TailWind CSS-->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+            extend: {
+                colors: {
+                clifford: '#da373d',
+                }
+            }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-gray-300">
+    <!-- header -->
+        <div class="container px-10 py-10 justify-between flex items-center">
+            <div
+                class="font-extrabold"
+                >LOGO
+            </div>
+
+            <ul 
+                class="space-x-6 font-medium">
+                <a 
+                    href=""
+                    class="hover:text-gray-500"
+                    >Home
+                </a>
+                <a
+                    href=""
+                    class="hover:text-gray-500"
+                    >Contato
+                </a>
+                <a 
+                    href=""
+                    class="hover:text-gray-500"
+                    >Sobre
+                </a>
+                <a 
+                    href=""
+                    class="hover:text-gray-500"
+                    >Login
+                </a>
+            </ul>
+        </div>
+    <!-- /header -->
+
+
+    <!-- banner -->
+    <div id="background-container" style="background: url('./images/new-york.jpg'); background-position: center; background-size: cover; height: 450px; width: auto; font-family: 'Playfair Display', serif;" class="flex flex-col items-center justify-center">
+        <h1 class="font-extrabold text-5xl text-white">Explore o mundo<span class="blinking-caret">|</span></h1>
+        <div>
+            <form action="" class="mt-4">
+                <select id="background-selector" class="text-black rounded-lg px-3 py-4">
+                    <option id="bg0" value="0"></option>
+                    <option id="bg1" value="1">Japão</option>
+                    <option id="bg2" value="2">Suécia</option>
+                    <option id="bg3" value="3">Nova Iorque</option>
+                </select>
+            </form>
+        </div>
+    </div>
+    <!-- /banner -->
+</body>
+
+</html>
