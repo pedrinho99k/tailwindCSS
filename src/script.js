@@ -1,8 +1,6 @@
 const backgroundContainer = document.getElementById("background-container");
 const backgroundSelector = document.getElementById("background-selector");
 
-console.log(backgroundSelector.value);
-
 backgroundSelector.addEventListener("change", function() {
     const selectedValue = backgroundSelector.value;
 
